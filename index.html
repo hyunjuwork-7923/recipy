@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>나의 레시피 북</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="sheet">
+  <div class="top-bar"></div>
+
+  <header class="cover">
+    <div>
+      <div class="eyebrow">Personal Recipe Archive</div>
+      <h1>나의 레시피 북</h1>
+      <div class="sub">먹어보고 좋았던 레시피만 기록합니다</div>
+    </div>
+    <div class="cover-stat">
+      <span class="stat-num" id="recipe-count">0</span>
+      <span class="stat-label">Recipes</span>
+    </div>
+  </header>
+
+  <div class="controls">
+    <div class="search-box">
+      <input type="text" id="search-input" placeholder="레시피, 태그로 검색">
+    </div>
+    <div class="filter-row" id="filter-row"></div>
+  </div>
+
+  <main class="grid" id="grid"></main>
+
+  <div class="sheet-footer">
+    <span>Personal Recipe Archive</span>
+    <span id="footer-updated"></span>
+  </div>
+</div>
+
+<script src="assets/js/recipes-data.js"></script>
+<script src="assets/js/app.js"></script>
+<script>initGridPage();</script>
+</body>
+</html>
